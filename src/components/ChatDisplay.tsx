@@ -160,7 +160,9 @@ export default function ChatDisplay({ title, date, messages, chatDirPath }: Chat
     <div className="max-w-[1600px] mx-auto p-4 h-screen">
       <div className="bg-white shadow-lg mb-4">
         <div className="max-w-[1600px] mx-auto p-4">
-          <h1 className="text-2xl font-bold text-center mb-4">{title}</h1>
+          <div className="bg-green-500 text-white text-2xl font-bold text-center mb-4">
+            {title}
+          </div>
           <h2 className="text-lg text-center text-gray-600 mb-4">{date}</h2>
           <div className="flex justify-center items-center mb-4 w-[100%]">
             <label htmlFor="message-slider">Set Message Start:</label>
